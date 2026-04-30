@@ -564,4 +564,61 @@
       speechSynthesis.speak(utt);
     }
 
-    playBtn.a
+    playBtn.addEventListener('click', () => {
+      const biz = document.getElementById('business-name').value.trim() || 'our business';
+      stopped = false;
+      transcriptEl.innerHTML = '';
+      transcriptWrap.style.display = 'block';
+      statusEl.innerHTML = '<span class="call-dot"></span> Call in progress...';
+      playBtn.style.display = 'none';
+      stopBtn.style.display = '';
+      utteranceQueue = getScript(biz);
+      speakNext();
+    });
+
+    stopBtn.addEventListener('click', stopCall);
+
+    startConvBtn.addEventListener('click', () => {
+      const biz = document.getElementById('business-name').value.trim() || 'our business';
+      stopped = false;
+      transcriptEl.innerHTML = '';
+      transcriptWrap.style.display = 'block';
+      micPanel.style.display = 'block';
+      statusEl.innerHTML = '<span class="call-dot"></span> Live conversation active...';
+      addLine('MAIA', `Hello! Thank you for calling ${biz}. This is MAIA, your AI scheduling assistant. How can I help you today?`);
+      const intro = new SpeechSynthesisUtterance(`Hello! Thank you for calling ${biz}. This is MAIA, your AI scheduling assistant. How can I help you today?`);
+      applyMaiaVoice(intro);
+      speechSynthesis.speak(intro);
+    });
+
+    micBtn.addEventListener('click', () => {
+      const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SR) { alert('Speech recognition not supported. Try Chrome or Edge.'); return; }
+      const rec = new SR();
+      rec.lang = 'en-US';
+      rec.interimResults = true;
+      micBtn.textContent = '🔴';
+      micHintText.textContent = 'Listening...';
+      rec.onresult = (e) => {
+        const interim = Array.from(e.results).map(r => r[0].transcript).join('');
+        interimEl.textContent = interim;
+        if (e.results[e.results.length - 1].isFinal) {
+          interimEl.textContent = '';
+          addLine('Caller', interim);
+        }
+      };
+      rec.onend = () => {
+        micBtn.textContent = '🎙';
+        micHintText.textContent = 'Tap to speak';
+      };
+      rec.start();
+    });
+
+  })();
+  </script>
+
+  <script src="js/theme.js"></script>
+  <script src="js/works.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
