@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Michelle Pink Rejuso</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    .services-rate-line { font-size:0.82rem; color:var(--muted,#777); margin:20px 0 40px; padding:12px 16px; background:var(--surface,#f9fafb); border-radius:8px; border-left:3px solid var(--accent,#f4845f); line-height:1.6; }
+    .services-rate-line strong { color:var(--accent,#f4845f); }
+    .services-section-header { display:flex; align-items:center; gap:10px; margin-bottom:24px; }
+    .services-section-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
+    .available-dot { background:#22c55e; }
+    .coming-dot    { background:#f59e0b; }
+    .training-dot  { background:#8b5cf6; }
+    .services-section-title { font-size:1rem; font-weight:700; color:var(--text-primary,#1a1a1a); }
+    .services-section-sub { font-size:0.75rem; color:var(--muted,#888); }
+    .service-card { background:var(--card-bg,#fff); border-radius:14px; padding:26px; display:flex; flex-direction:column; gap:12px; transition:box-shadow 0.2s,transform 0.2s; }
+    .service-card:hover { box-shadow:0 6px 28px rgba(0,0,0,0.08); transform:translateY(-2px); }
+    .service-card.available { border:1.5px solid var(--border,#e5e7eb); }
+    .service-card.coming    { border:1.5px dashed var(--border,#e5e7eb); opacity:0.82; }
+    .service-card-top { display:flex; align-items:center; justify-content:space-between; }
+    .service-icon { font-size:1.6rem; }
+    .service-card h3 { font-size:1rem; font-weight:700; color:var(--text-primary,#1a1a1a); }
+    .service-card p  { font-size:0.82rem; color:var(--muted,#666); line-height:1.65; }
+    .badge { font-size:0.67rem; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase; letter-spacing:0.05em; }
+    .available-badge { background:#dcfce7; color:#166534; }
+    .coming-badge    { background:#fef3c7; color:#92400e; }
+    .service-deliverables { background:var(--surface,#f9fafb); border-radius:8px; padding:14px 16px; margin-top:4px; }
+    .deliverables-label { font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent,#f4845f); margin-bottom:8px !important; }
+    .service-deliverables ul { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:5px; }
+    .service-deliverables ul li { font-size:0.78rem; color:var(--text-primary,#1a1a1a); padding-left:16px; position:relative; line-height:1.5; }
+    .service-deliverables ul li::before { content:'✓'; position:absolute; left:0; color:#22c55e; font-weight:700; font-size:0.72rem; }
+    .service-good-for { font-size:0.74rem; color:var(--muted,#888); line-height:1.5; margin-top:auto; padding-top:4px; }
+    .good-for-label { font-weight:700; color:var(--text-primary,#1a1a1a); margin-right:4px; }
+    .coming-grid .service-card { padding:22px; }
+    .services-cta { display:flex; gap:12px; margin-top:48px; flex-wrap:wrap; }
+    .training-section { margin-top:56px; border:1.5px solid #ede9fe; border-radius:14px; padding:32px; background:var(--surface,#faf9ff); }
+    .training-intro { font-size:0.85rem; color:var(--muted,#666); line-height:1.65; margin:10px 0 28px; max-width:640px; }
+    .training-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; }
+    .training-card { background:var(--card-bg,#fff); border:1.5px solid #ede9fe; border-radius:10px; padding:18px; display:flex; flex-direction:column; gap:8px; }
+    .training-card-top { display:flex; align-items:center; gap:10px; }
+    .training-card-icon { font-size:1.4rem; }
+    .training-card-title { font-size:0.9rem; font-weight:700; color:var(--text-primary,#1a1a1a); }
+    .training-card-desc  { font-size:0.78rem; color:var(--muted,#666); line-height:1.55; }
+    .training-note { margin-top:24px; font-size:0.8rem; color:var(--muted,#777); font-style:italic; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">M</span>
+        <span class="logo-text">
+          <span class="logo-name">MAIA</span>
+          <span class="logo-sub">Michelle - A.I Assistant</span>
+        </span>
+      </a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="nav-active">Services</a></li>
+        <li><a href="journey.html">AI Journey</a></li>
+        <li><a href="works.html">Work Samples</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle">🌙 Dark</button>
+    </div>
+  </nav>
+
+  <section id="services">
+    <div class="section-inner">
+
+      <p class="section-label">Services</p>
+      <h2>What I offer — and what's coming.</h2>
+
+      <p class="services-rate-line">
+        💬 Have questions about pricing or availability? <a href="contact.html" class="inline-link">Send me a message</a> or ask <strong>MAIA</strong> — my assistant is available 24/7 via the chat bubble.
+      </p>
+
+      <!-- AVAILABLE NOW -->
+      <div class="services-section-header">
+        <span class="services-section-dot available-dot"></span>
+        <span class="services-section-title">Available Now</span>
+        <span class="services-section-sub">— services I'm delivering today</span>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card available">
+          <div class="service-card-top">
+            <span class="service-icon">📋</span>
+            <span class="badge available-badge">Available</span>
+          </div>
+          <h3>Data Entry</h3>
+          <p>Accurate, organized data entry into spreadsheets, CRMs, or any platform you use — sourced from whatever's available online.</p>
+          <div class="service-deliverables">
+            <p class="deliverables-label">What you get</p>
+            <ul>
+              <li>Clean, structured spreadsheet or CRM entries</li>
+              <li>Consistent formatting across all records</li>
+              <li>Error checks and data validation</li>
+              <li>Regular progress updates</li>
+            </ul>
+          </div>
+          <p class="service-good-for"><span class="good-for-label">Good for:</span> Businesses with large volumes of data that need to be organized fast and accurately.</p>
+        </div>
+
+        <div class="service-card available">
+          <div class="service-card-top">
+            <span class="service-icon">🔍</span>
+            <span class="badge available-badge">Available</span>
+          </div>
+          <h3>Lead Research</h3>
+          <p>Manual research and verification of business leads — sourced from online directories, social platforms, and public records.</p>
+          <div class="service-deliverables">
+            <p class="deliverables-label">What you get</p>
+            <ul>
+              <li>Verified lead list in Google Sheets or Excel</li>
+              <li>Company name, contact, phone, email (where available)</li>
+              <li>Filtered by your target criteria</li>
+              <li>Duplicates removed</li>
+            </ul>
+          </div>
+          <p class="service-good-for"><span class="good-for-label">Good for:</span> Sales teams, agencies, and founders who need clean prospect lists without doing the digging themselves.</p>
+        </div>
+
+        <div class="service-card available">
+          <div class="service-card-top">
+            <span class="service-icon">📄</span>
+            <span class="badge available-badge">Available</span>
+          </div>
+          <h3>PDF Data Migration</h3>
+          <p>Transferring data from scanned PDFs or paper records into digital systems — accurately and confidentially.</p>
+          <div class="service-deliverables">
+            <p class="deliverables-label">What you get</p>
+            <ul>
+              <li>Digitized records in your preferred format</li>
+              <li>Field-by-field accuracy checks</li>
+              <li>Confidential handling of sensitive documents</li>
+              <li>Organized file naming and structure</li>
+            </ul>
+          </div>
+          <p class="service-good-for"><span class="good-for-label">Good for:</span> Clinics, legal offices, and businesses transitioning from paper-based to digital systems.</p>
+        </div>
+
+        <div class="service-card available">
+          <div class="service-card-top">
+            <span class="service-icon">💬</span>
+            <span class="badge available-badge">Available</span>
+          </div>
+          <h3>Customer Service Support</h3>
+          <p>Handling inbound inquiries, outbound follow-ups, and client communications — professionally and on time.</p>
+          <div class="service-deliverables">
+            <p class="deliverables-label">What you get</p>
+            <ul>
+              <li>Prompt responses to client messages</li>
+              <li>Outbound call and follow-up handling</li>
+              <li>Accurate documentation of interactions</li>
+              <li>Escalation flagging when needed</li>
+            </ul>
+          </div>
+          <p class="service-good-for"><span class="good-for-label">Good for:</span> Small businesses that need reliable front-line support without a full in-house team.</p>
+        </div>
+
+        <div class="service-card available">
+          <div class="service-card-top">
+            <span class="service-icon">🗃️</span>
+            <span class="badge available-badge">Available</span>
+          </div>
+          <h3>File &amp; Document Management</h3>
+          <p>Organizing, naming, and maintaining digital files so your team can find what they need — without the mess.</p>
+          <div class="service-deliverables">
+            <p class="deliverables-label">What you get</p>
+            <ul>
+              <li>Organized folder structure in Drive or your platform</li>
+              <li>Consistent file naming conventions</li>
+              <li>Archived and active file separation</li>
+              <li>Ongoing maintenance if needed</li>
+            </ul>
+          </div>
+          <p class="service-good-for"><span class="good-for-label">Good for:</span> Teams drowning in disorganized files, shared drives, or outdated document systems.</p>
+        </div>
+
+      </div>
+
+      <!-- COMING SOON -->
+      <div class="services-section-header" style="margin-top:56px;">
+        <span class="services-section-dot coming-dot"></span>
+        <span class="services-section-title">Coming Soon</span>
+        <span class="services-section-sub">— services launching as my skills grow</span>
+      </div>
+
+      <div class="services-grid coming-grid">
+
+        <div class="service-card coming">
+          <div class="service-card-top">
+            <span class="service-icon">📱</span>
+            <span class="badge coming-badge">Coming Soon</span>
+          </div>
+          <h3>Social Media Support</h3>
+          <p>Scheduling posts, managing content calendars, and keeping your social presence consistent — without you having to think about it daily.</p>
+        </div>
+
+        <div class="service-card coming">
+          <div class="service-card-top">
+            <span class="service-icon">🗓️</span>
+            <span class="badge coming-badge">Coming Soon</span>
+          </div>
+          <h3>Admin Support</h3>
+          <p>Email management, calendar coordination, document preparation, and day-to-day admin tasks handled reliably.</p>
+        </div>
+
+        <div class="service-card coming">
+          <div class="service-card-top">
+            <span class="service-icon">🤖</span>
+            <span class="badge coming-badge">Coming Soon</span>
+          </div>
+          <h3>Custom AI Automation Workflows</h3>
+          <p>End-to-end automations built in n8n or Make — replacing manual, repetitive tasks with smart, connected workflows.</p>
+        </div>
+
+        <div class="service-card coming">
+          <div class="service-card-top">
+            <span class="service-icon">🧠</span>
+            <span class="badge coming-badge">Coming Soon</span>
+          </div>
+          <h3>Executive Assistance + AI</h3>
+          <p>High-level support for founders and executives — research, scheduling, communications, and AI-assisted reporting.</p>
+        </div>
+
+        <div class="service-card coming">
+          <div class="service-card-top">
+            <span class="service-icon">📞</span>
+            <span class="badge coming-badge">Coming Soon</span>
+          </div>
+          <h3>AI Appointment Setting</h3>
+          <p>Automated appointment booking and follow-up workflows — using AI to handle scheduling so you don't have to.</p>
+        </div>
+
+      </div>
+
+      <!-- OPEN TO TRAINING -->
+      <div class="training-section">
+        <div class="services-section-header">
+          <span class="services-section-dot training-dot"></span>
+          <span class="services-section-title">Open to Training</span>
+          <span class="services-section-sub">— willing to learn your process</span>
+        </div>
+        <p class="training-intro">
+          If you have a specific workflow, tool, or process you need support with — I'm open to being trained on it.
+          I pick up systems quickly and commit fully to whatever I take on. Open to any industry.
+        </p>
+        <div class="training-grid">
+          <div class="training-card">
+            <div class="training-card-top">
+              <span class="training-card-icon">🗓️</span>
+              <span class="training-card-title">Admin Support</span>
+            </div>
+            <p class="training-card-desc">Email management, calendars, document prep — train me on your tools and workflow.</p>
+          </div>
+          <div class="training-card">
+            <div class="training-card-top">
+              <span class="training-card-icon">📱</span>
+              <span class="training-card-title">Social Media</span>
+            </div>
+            <p class="training-card-desc">Content scheduling, engagement, and platform management — with guidance on your brand voice.</p>
+          </div>
+          <div class="training-card">
+            <div class="training-card-top">
+              <span class="training-card-icon">📊</span>
+              <span class="training-card-title">CRM Management</span>
+            </div>
+            <p class="training-card-desc">Managing contacts, pipelines, and follow-ups in your CRM — train me on the platform you use.</p>
+          </div>
+          <div class="training-card">
+            <div class="training-card-top">
+              <span class="training-card-icon">🧠</span>
+              <span class="training-card-title">Executive Assistance</span>
+            </div>
+            <p class="training-card-desc">High-level support tasks — research, scheduling, communications, and reporting.</p>
+          </div>
+          <div class="training-card">
+            <div class="training-card-top">
+              <span class="training-card-icon">🤖</span>
+              <span class="training-card-title">AI Automation Support</span>
+            </div>
+            <p class="training-card-desc">Learning your automation stack — n8n, Make, Zapier, GHL, or whatever tools your team runs on.</p>
+          </div>
+        </div>
+        <p class="training-note">Open to any industry — if you have a process and are willing to train, I'm ready to learn.</p>
+      </div>
+
+      <!-- CTA -->
+      <div class="services-cta">
+        <a href="contact.html" class="btn-primary">Work with me →</a>
+        <a href="works.html" class="btn-ghost">See my work samples</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Michelle Pink Rejuso · Built to grow with me.</p>
+    <p class="footer-links">
+      <a href="https://www.linkedin.com/in/michelle-pink-achumbre-rejuso-9a9830146" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+      <span class="footer-sep">·</span>
+      <a href="mailto:themaiava@gmail.com" class="footer-link">themaiava@gmail.com</a>
+    </p>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

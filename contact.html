@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Michelle Pink Rejuso</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    .consent-box {
+      background: var(--surface, #f9fafb);
+      border: 1.5px solid var(--border, #e5e7eb);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 4px;
+    }
+    .consent-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .consent-label input[type="checkbox"] {
+      margin-top: 3px;
+      flex-shrink: 0;
+      width: 15px;
+      height: 15px;
+      accent-color: var(--accent, #f4845f);
+      cursor: pointer;
+    }
+    .consent-text {
+      font-size: 0.76rem;
+      color: var(--muted, #777);
+      line-height: 1.6;
+    }
+    .consent-label:has(input:checked) .consent-text {
+      color: var(--text-primary, #1a1a1a);
+    }
+
+    /* ── FORM SUCCESS STATE ── */
+    .form-success {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 32px;
+      background: var(--card-bg, #fff);
+      border: 1.5px solid var(--border, #e5e7eb);
+      border-left: 4px solid #22c55e;
+      border-radius: 12px;
+      animation: fadeIn 0.4s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .success-icon { font-size: 2rem; }
+    .success-heading {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary, #1a1a1a);
+      margin: 0;
+    }
+    .success-body {
+      font-size: 0.84rem;
+      color: var(--muted, #666);
+      line-height: 1.7;
+      margin: 0;
+    }
+    .success-body strong { color: var(--text-primary, #1a1a1a); font-weight: 600; }
+    .success-note {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent, #f4845f);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">M</span>
+        <span class="logo-text">
+          <span class="logo-name">MAIA</span>
+          <span class="logo-sub">Michelle - A.I Assistant</span>
+        </span>
+      </a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="journey.html">AI Journey</a></li>
+        <li><a href="works.html">Work Samples</a></li>
+        <li><a href="contact.html" class="nav-active">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle">🌙 Dark</button>
+    </div>
+  </nav>
+
+  <section id="contact">
+    <div class="section-inner">
+
+      <p class="section-label">Let's connect</p>
+      <h2>Open for work &amp; collaborations.</h2>
+      <p class="contact-sub" style="text-align:left; margin:0 0 48px;">
+        Whether you need data support now or want to know when my AI automation
+        service launches — fill out the form below and I'll get back to you within 24 hours.
+      </p>
+
+      <div class="contact-page-grid">
+
+        <!-- LEFT — FORM -->
+        <div class="contact-form-wrap">
+          <h3 class="form-heading">Send me a message</h3>
+
+          <form class="contact-form" action="https://formspree.io/f/mjglvwlw" method="POST" id="contact-form">
+
+            <div class="form-row two-col">
+              <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="e.g. Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="company">Company Name <span class="required">*</span></label>
+                <input type="text" id="company" name="company" placeholder="e.g. Acme Corp" required />
+              </div>
+            </div>
+
+            <div class="form-row two-col">
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="whatsapp">WhatsApp Number <span class="optional">(optional)</span></label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="+1 234 567 8900" />
+              </div>
+            </div>
+
+            <div class="form-row two-col">
+              <div class="form-group">
+                <label for="timezone">Your Timezone <span class="required">*</span></label>
+                <select id="timezone" name="timezone" required>
+                  <option value="" disabled selected>— Select your timezone —</option>
+                  <optgroup label="🇺🇸 United States">
+                    <option value="EST (UTC-5)">Eastern Time — EST (UTC-5)</option>
+                    <option value="CST (UTC-6)">Central Time — CST (UTC-6)</option>
+                    <option value="MST (UTC-7)">Mountain Time — MST (UTC-7)</option>
+                    <option value="PST (UTC-8)">Pacific Time — PST (UTC-8)</option>
+                  </optgroup>
+                  <optgroup label="🇨🇦 Canada">
+                    <option value="Canada EST (UTC-5)">Eastern — Toronto, Ottawa</option>
+                    <option value="Canada PST (UTC-8)">Pacific — Vancouver</option>
+                  </optgroup>
+                  <optgroup label="🇬🇧 United Kingdom">
+                    <option value="GMT (UTC+0)">GMT (UTC+0)</option>
+                    <option value="BST (UTC+1)">BST — British Summer Time (UTC+1)</option>
+                  </optgroup>
+                  <optgroup label="🇦🇺 Australia">
+                    <option value="AEST (UTC+10)">AEST — Sydney, Melbourne (UTC+10)</option>
+                    <option value="ACST (UTC+9:30)">ACST — Adelaide, Darwin (UTC+9:30)</option>
+                    <option value="AWST (UTC+8)">AWST — Perth (UTC+8)</option>
+                  </optgroup>
+                  <optgroup label="🌏 Asia">
+                    <option value="SGT (UTC+8)">Singapore Time (UTC+8)</option>
+                    <option value="HKT (UTC+8)">Hong Kong Time (UTC+8)</option>
+                    <option value="JST (UTC+9)">Japan Standard Time (UTC+9)</option>
+                    <option value="IST (UTC+5:30)">India Standard Time (UTC+5:30)</option>
+                  </optgroup>
+                  <optgroup label="🌍 Europe">
+                    <option value="CET (UTC+1)">Central European Time (UTC+1)</option>
+                    <option value="EET (UTC+2)">Eastern European Time (UTC+2)</option>
+                  </optgroup>
+                  <optgroup label="🌎 Other">
+                    <option value="Other">Other — I'll mention it in my message</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="website">Website <span class="optional">(optional)</span></label>
+                <input type="url" id="website" name="website" placeholder="https://yourbusiness.com" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="services">Service you're interested in <span class="required">*</span></label>
+              <select id="services" name="services" required>
+                <option value="" disabled selected>— Select a service —</option>
+                <option value="Data Entry">📋 Data Entry</option>
+                <option value="Lead Research">🔍 Lead Research</option>
+                <option value="PDF Data Migration">📄 PDF Data Migration</option>
+                <option value="Customer Service Support">💬 Customer Service Support</option>
+                <option value="File & Document Management">🗃️ File &amp; Document Management</option>
+                <option value="Custom AI Automation Workflows">🤖 Custom AI Automation Workflows</option>
+                <option value="Open to Training">🎓 Open to Training — willing to learn your process</option>
+                <option value="Not sure yet">🤔 Not sure yet — let's talk</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your project, what you need help with, and your timeline…" required></textarea>
+            </div>
+
+            <!-- CONSENT NOTICE -->
+            <div class="consent-box">
+              <label class="consent-label">
+                <input type="checkbox" id="consent" name="consent" required />
+                <span class="consent-text">
+                  I understand that the details I submit here will be saved so Michelle can respond to my inquiry.
+                  This information will not be shared with third parties or used for any other purpose.
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn-primary form-submit">Send message →</button>
+
+            <div class="form-success" id="form-success">
+              <div class="success-icon">📨</div>
+              <h3 class="success-heading">Message received — thank you.</h3>
+              <p class="success-body">
+                I've got your details and will personally review your message.
+                You can expect a response within <strong>24 hours</strong>, Monday to Friday.
+              </p>
+              <p class="success-body">
+                Have an urgent question in the meantime? <strong>MAIA</strong> is available
+                24/7 via the chat bubble — or reach me directly at
+                <a href="mailto:themaiava@gmail.com" class="inline-link">themaiava@gmail.com</a>.
+              </p>
+              <p class="success-note">Looking forward to connecting.</p>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- RIGHT — AVAILABILITY -->
+        <div class="contact-sidebar">
+
+          <!-- Availability -->
+          <div class="availability-card">
+            <h3 class="form-heading">Availability</h3>
+            <div class="avail-schedule">
+              <div class="avail-row">
+                <div class="avail-days">
+                  <span class="avail-dot green"></span>
+                  <span class="avail-day">Status</span>
+                </div>
+                <span class="avail-hours">Open to new clients</span>
+              </div>
+              <div class="avail-row">
+                <div class="avail-days">
+                  <span class="avail-dot green"></span>
+                  <span class="avail-day">Hours</span>
+                </div>
+                <span class="avail-hours">Part-time or full-time · flexible hours</span>
+              </div>
+              <div class="avail-row">
+                <div class="avail-days">
+                  <span class="avail-dot green"></span>
+                  <span class="avail-day">Timezone</span>
+                </div>
+                <span class="avail-hours">Overlap with your timezone · US, UK, AU & more</span>
+              </div>
+              <div class="avail-row">
+                <div class="avail-days">
+                  <span class="avail-dot green"></span>
+                  <span class="avail-day">Response</span>
+                </div>
+                <span class="avail-hours">Within 24 hours</span>
+              </div>
+            </div>
+            <p class="avail-tz">📅 Book a discovery call and I'll match your timezone</p>
+          </div>
+
+          <!-- AI Assistant note -->
+          <div class="ai-avail-card">
+            <div class="ai-avail-top">
+              <span class="ai-avail-icon">🤖</span>
+              <span class="avail-dot green" style="margin-left:auto"></span>
+            </div>
+            <strong>AI Assistant — available 24/7</strong>
+            <p>Have a quick question? My AI assistant can answer inquiries about services, rates, and availability anytime — no waiting.</p>
+          </div>
+
+          <!-- Book a call -->
+          <div class="book-call-card">
+            <div class="book-call-icon">📅</div>
+            <h3>Book a discovery call</h3>
+            <p>Prefer to talk it through? Schedule a free 20-minute call. I'll work around your timezone — just pick a time that works for you.</p>
+            <a href="https://calendly.com/themaiava" target="_blank" rel="noopener" class="btn-primary book-call-btn">Book a call →</a>
+            <p class="book-call-note">Free · 20 minutes · Google Meet or Zoom</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Michelle Pink Rejuso · Built to grow with me.</p>
+    <p class="footer-links">
+      <a href="https://www.linkedin.com/in/michelle-pink-achumbre-rejuso-9a9830146" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+      <span class="footer-sep">·</span>
+      <a href="mailto:themaiava@gmail.com" class="footer-link">themaiava@gmail.com</a>
+    </p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const success = document.getElementById('form-success');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        success.style.display = 'flex';
+      } else {
+        alert('Something went wrong. Please email me directly at themaiava@gmail.com');
+      }
+    });
+  </script>
+  <script src="theme.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

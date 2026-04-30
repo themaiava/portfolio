@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work Samples — Michelle Pink Rejuso</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ── SAMPLE OUTPUT ── */
+    .sample-wrap {
+      margin-top: 12px;
+      border: 1.5px solid var(--border, #e5e7eb);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .sample-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-primary, #1a1a1a);
+      background: var(--surface, #f9fafb);
+      padding: 8px 14px;
+      border-bottom: 1.5px solid var(--border, #e5e7eb);
+      margin: 0 !important;
+    }
+    .sample-note {
+      font-weight: 400;
+      color: var(--muted, #999);
+      font-size: 0.68rem;
+    }
+    .sample-table-wrap {
+      overflow-x: auto;
+      padding: 0;
+    }
+    .sample-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.72rem;
+      font-family: 'Fira Code', monospace;
+    }
+    .sample-table th {
+      background: var(--surface, #f9fafb);
+      color: var(--muted, #888);
+      font-weight: 600;
+      text-align: left;
+      padding: 7px 12px;
+      border-bottom: 1.5px solid var(--border, #e5e7eb);
+      white-space: nowrap;
+    }
+    .sample-table td {
+      padding: 7px 12px;
+      color: var(--text-primary, #1a1a1a);
+      border-bottom: 1px solid var(--border, #f0f0f0);
+      white-space: nowrap;
+    }
+    .sample-table tr:last-child td { border-bottom: none; }
+    .sample-table tr:hover td { background: var(--surface, #fafafa); }
+
+    /* ── PROCESS FLOW ── */
+    .process-flow {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      padding: 14px;
+      flex-wrap: wrap;
+    }
+    .flow-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      flex: 1;
+      min-width: 80px;
+      text-align: center;
+    }
+    .flow-icon {
+      font-size: 1.4rem;
+      width: 44px;
+      height: 44px;
+      background: var(--surface, #f9fafb);
+      border: 1.5px solid var(--border, #e5e7eb);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .flow-text {
+      font-size: 0.68rem;
+      color: var(--muted, #666);
+      line-height: 1.4;
+    }
+    .flow-arrow {
+      font-size: 1rem;
+      color: var(--accent, #f4845f);
+      font-weight: 700;
+      margin-top: 12px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">M</span>
+        <span class="logo-text">
+          <span class="logo-name">MAIA</span>
+          <span class="logo-sub">Michelle - A.I Assistant</span>
+        </span>
+      </a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="journey.html">AI Journey</a></li>
+        <li><a href="works.html" class="nav-active">Work Samples</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle">🌙 Dark</button>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section id="works-hero">
+    <div class="section-inner">
+      <p class="section-label">Work Samples</p>
+      <h1 class="works-title">Things I've built &amp; delivered.</h1>
+      <p class="works-intro">
+        Real work from real projects — case studies, sample outputs, and demos.
+        Automation is in progress and will be added here as it ships.
+      </p>
+
+      <!-- FILTER TABS -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="systems">Systems &amp; Trackers</button>
+        <button class="filter-btn" data-filter="automation">Automation</button>
+        <button class="filter-btn" data-filter="data">Data &amp; Research</button>
+        <button class="filter-btn" data-filter="ai">AI Tools</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS GRID -->
+  <section id="works-grid-section">
+    <div class="section-inner">
+
+      <div class="works-grid" id="works-grid">
+
+        <!-- CASE STUDY — TASK TRACKER -->
+        <div class="work-card case-study-card" data-category="systems">
+          <div class="work-card-top">
+            <span class="work-icon">📊</span>
+            <span class="work-status available-badge">Case Study</span>
+          </div>
+          <h3>Team Task Tracker — Dental Practice</h3>
+          <p>
+            The team had no system for tracking patient files — work was getting lost,
+            duplicated, and nobody knew what was done or what was next. I built a
+            Google Sheets tracker on my own initiative to keep my own work organized.
+            When the team saw it, they adopted it as their official system. The client
+            then started requesting trackers for everything else.
+          </p>
+          <div class="case-study-results">
+            <div class="result-item">
+              <span class="result-label">Problem</span>
+              <span class="result-val">No visibility on file status — work was lost and duplicated</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">Solution</span>
+              <span class="result-val">Custom Google Sheets tracker with file status, assignee, and queue</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">Outcome</span>
+              <span class="result-val">Adopted team-wide, used daily, zero lost files</span>
+            </div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">Google Sheets</span>
+            <span class="tag">Systems Design</span>
+            <span class="tag">Operations</span>
+          </div>
+        </div>
+
+        <!-- CASE STUDY — LEAD RESEARCH -->
+        <div class="work-card case-study-card" data-category="data">
+          <div class="work-card-top">
+            <span class="work-icon">🔍</span>
+            <span class="work-status available-badge">Case Study</span>
+          </div>
+          <h3>Lead Research — US Business Contacts</h3>
+          <p>
+            Over 6 years, I researched and compiled thousands of US business leads across
+            multiple industries — skilled trades, law firms, counseling practices, and manual
+            labor sectors. Working from client-provided websites and directories, I consistently
+            delivered 100+ verified leads per shift, organized and ready for outreach.
+          </p>
+          <div class="case-study-results">
+            <div class="result-item">
+              <span class="result-label">Scope</span>
+              <span class="result-val">Thousands of US business leads across multiple industries over 6 years</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">Process</span>
+              <span class="result-val">Researched from client-provided sources, verified contact details, removed duplicates, organized in Google Sheets</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">Output</span>
+              <span class="result-val">100+ verified leads per shift — company name, contact person, phone, email, full address</span>
+            </div>
+          </div>
+
+          <!-- MOCK SAMPLE TABLE -->
+          <div class="sample-wrap">
+            <p class="sample-label">📋 Sample output format <span class="sample-note">(mock data — real structure)</span></p>
+            <div class="sample-table-wrap">
+              <table class="sample-table">
+                <thead>
+                  <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bright Path Legal</td>
+                    <td>James Carter</td>
+                    <td>(312) 555-0182</td>
+                    <td>j.carter@brightpathlegal.com</td>
+                    <td>142 N Clark St, Chicago, IL 60601</td>
+                  </tr>
+                  <tr>
+                    <td>Summit Plumbing Co.</td>
+                    <td>Rosa Delgado</td>
+                    <td>(602) 555-0347</td>
+                    <td>info@summitplumbing.com</td>
+                    <td>88 W McDowell Rd, Phoenix, AZ 85003</td>
+                  </tr>
+                  <tr>
+                    <td>Clearview Counseling</td>
+                    <td>Dr. Alan Park</td>
+                    <td>(415) 555-0219</td>
+                    <td>apark@clearviewcounseling.com</td>
+                    <td>500 Post St Ste 3, San Francisco, CA 94102</td>
+                  </tr>
+                  <tr>
+                    <td>Apex Electric LLC</td>
+                    <td>Mike Torres</td>
+                    <td>(214) 555-0493</td>
+                    <td>mtorres@apexelectric.com</td>
+                    <td>3200 Commerce St, Dallas, TX 75226</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="work-tags">
+            <span class="tag">Lead Research</span>
+            <span class="tag">Google Sheets</span>
+            <span class="tag">Data Verification</span>
+            <span class="tag">US Markets</span>
+          </div>
+        </div>
+
+        <!-- CASE STUDY — PDF MIGRATION -->
+        <div class="work-card case-study-card" data-category="data">
+          <div class="work-card-top">
+            <span class="work-icon">📄</span>
+            <span class="work-status available-badge">Case Study</span>
+          </div>
+          <h3>PDF Data Migration — Dental Screening Records</h3>
+          <p>
+            A dental practice runs school screening programs — providing checkups,
+            prophy, fluoride, and sealant treatments across multiple schools. Parents and
+            guardians fill out patient forms on-site. Those forms are scanned and uploaded
+            to Dropbox. My job: open each scanned form and encode every patient record
+            accurately into their proprietary dental software — zero errors, full confidentiality.
+          </p>
+          <div class="case-study-results">
+            <div class="result-item">
+              <span class="result-label">Source</span>
+              <span class="result-val">Handwritten patient consent and screening forms, scanned to Dropbox</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">Process</span>
+              <span class="result-val">Open scanned form → read and encode all fields → enter into dental software → verify accuracy</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">Standard</span>
+              <span class="result-val">Sensitive patient data — handled with full confidentiality and zero tolerance for entry errors</span>
+            </div>
+          </div>
+
+          <!-- PROCESS FLOW VISUAL -->
+          <div class="sample-wrap">
+            <p class="sample-label">🔄 How the process works</p>
+            <div class="process-flow">
+              <div class="flow-step">
+                <div class="flow-icon">📝</div>
+                <div class="flow-text">Parent fills out patient form on-site</div>
+              </div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-step">
+                <div class="flow-icon">📸</div>
+                <div class="flow-text">Form scanned and uploaded to Dropbox</div>
+              </div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-step">
+                <div class="flow-icon">⌨️</div>
+                <div class="flow-text">I encode each record into dental software</div>
+              </div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-step">
+                <div class="flow-icon">✅</div>
+                <div class="flow-text">Verified, accurate, confidential record</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-tags">
+            <span class="tag">PDF Migration</span>
+            <span class="tag">Data Entry</span>
+            <span class="tag">Healthcare</span>
+            <span class="tag">Confidential Records</span>
+          </div>
+        </div>
+
+        <!-- IN PROGRESS — n8n AUTOMATION -->
+        <div class="work-card placeholder-card" data-category="automation">
+          <div class="work-card-top">
+            <span class="work-icon">🚧</span>
+            <span class="work-status coming-badge">In Progress</span>
+          </div>
+          <h3>Lead Research Automation — n8n</h3>
+          <p>Building an n8n workflow to automate the lead research process I've done manually for 6 years — pulling from sources, structuring data, and delivering a clean list without the repetitive work.</p>
+          <div class="work-tags">
+            <span class="tag">n8n</span>
+            <span class="tag">Google Sheets</span>
+            <span class="tag">Lead Research</span>
+          </div>
+        </div>
+
+        <!-- EMPTY SLOT — shows when no projects yet -->
+        <div class="work-card add-card">
+          <div class="add-icon">+</div>
+          <p>Next project slot — coming soon.</p>
+        </div>
+
+      </div>
+
+      <!-- EMPTY STATE MESSAGE -->
+      <div class="empty-state" id="empty-state" style="display:none;">
+        <p>No projects in this category yet — check back soon.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AI CALL DEMO -->
+  <section id="call-demo-section">
+    <div class="section-inner">
+      <p class="section-label">Live Demo</p>
+      <h2>Hear what your AI appointment agent sounds like.</h2>
+      <p class="works-intro">Enter your business name, pick a voice and tone — then hit Play to hear your AI agent in action.</p>
+
+      <div class="call-demo-card">
+
+        <div class="call-demo-inputs">
+          <div class="call-input-group">
+            <label for="business-name">Your business name</label>
+            <input type="text" id="business-name" placeholder="e.g. Bright Smile Dental" maxlength="60" />
+          </div>
+
+          <div class="call-demo-actions">
+            <button class="btn-primary" id="play-call-btn">▶ Sample Call</button>
+            <button class="call-stop-btn" id="stop-call-btn" style="display:none;">⏹ Stop</button>
+          </div>
+
+          <div class="live-divider">— or —</div>
+
+          <button class="btn-live" id="start-conv-btn">🎙 Start Live Conversation</button>
+          <p class="live-hint">You play the customer — the AI responds in real time.<br><span>Best on Chrome or Edge.</span></p>
+        </div>
+
+        <div class="call-transcript-wrap" id="transcript-wrap" style="display:none;">
+          <div class="call-status" id="call-status">
+            <span class="call-dot"></span> Call in progress...
+          </div>
+          <div class="call-transcript" id="call-transcript"></div>
+          <div class="mic-panel" id="mic-panel" style="display:none;">
+            <p class="interim-text" id="interim-display"></p>
+            <button class="mic-btn" id="mic-btn">🎙</button>
+            <p class="mic-hint-text" id="mic-hint-text">Tap to speak</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="works-cta">
+    <div class="section-inner works-cta-inner">
+      <h2>Want to follow the journey?</h2>
+      <p>I update this page as I finish new projects. You can also track my progress on the <a href="journey.html" class="inline-link">AI Journey tracker</a>.</p>
+      <a href="contact.html" class="btn-primary">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Michelle Pink Rejuso · Built to grow with me.</p>
+    <p class="footer-links">
+      <a href="https://www.linkedin.com/in/michelle-pink-achumbre-rejuso-9a9830146" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+      <span class="footer-sep">·</span>
+      <a href="mailto:themaiava@gmail.com" class="footer-link">themaiava@gmail.com</a>
+    </p>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script src="works.js"></script>
+  <script src="chatbot.js"></script>
+  <script>
+  (function () {
+    const playBtn        = document.getElementById('play-call-btn');
+    const stopBtn        = document.getElementById('stop-call-btn');
+    const startConvBtn   = document.getElementById('start-conv-btn');
+    const micBtn         = document.getElementById('mic-btn');
+    const micPanel       = document.getElementById('mic-panel');
+    const micHintText    = document.getElementById('mic-hint-text');
+    const interimEl      = document.getElementById('interim-display');
+    const transcriptWrap = document.getElementById('transcript-wrap');
+    const transcriptEl   = document.getElementById('call-transcript');
+    const statusEl       = document.getElementById('call-status');
+
+    // Option pill selection
+    document.querySelectorAll('.option-pills').forEach(group => {
+      group.querySelectorAll('.option-pill').forEach(pill => {
+        pill.addEventListener('click', () => {
+          group.querySelectorAll('.option-pill').forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+        });
+      });
+    });
+
+    function getSelected(groupId) {
+      return document.querySelector(`#${groupId} .option-pill.active`)?.dataset.value;
+    }
+
+    const toneSettings = {
+      cheerful: { pitch: 1.2,  rate: 1.05 },
+      calm:     { pitch: 0.9,  rate: 0.85 },
+      lively:   { pitch: 1.35, rate: 1.15 },
+      warm:     { pitch: 1.05, rate: 0.9  },
+    };
+
+    // ── MAIA VOICE SETUP ──
+    // Voices load async in browsers — we init immediately and update on voiceschanged
+    let maiaVoice = null;
+
+    function initMaiaVoice() {
+      const voices = speechSynthesis.getVoices();
+      if (!voices.length) return;
+
+      const enVoices = voices.filter(v => v.lang.startsWith('en'));
+      const pool = enVoices.length ? enVoices : voices;
+
+      // Priority: Google/Microsoft natural voices first — they sound far better
+      const priorities = [
+        'google us english',
+        'microsoft zira',
+        'microsoft aria',
+        'microsoft jenny',
+        'samantha',   // macOS natural voice
+        'karen',      // macOS Australian
+        'victoria',   // macOS
+        'zira',       // Windows
+        'susan',
+        'hazel',
+        'fiona',
+        'moira',
+        'tessa',
+        'female',
+        'woman',
+      ];
+
+      for (const key of priorities) {
+        const match = pool.find(v => v.name.toLowerCase().includes(key));
+        if (match) { maiaVoice = match; return; }
+      }
+      // Fallback: first English voice available
+      maiaVoice = pool[0] || voices[0] || null;
+    }
+
+    initMaiaVoice();
+    speechSynthesis.addEventListener('voiceschanged', initMaiaVoice);
+
+    function applyMaiaVoice(utt) {
+      if (maiaVoice) utt.voice = maiaVoice;
+      utt.pitch = 1.08;  // Slight lift — natural female without sounding artificial
+      utt.rate  = 0.93;  // Measured pace — clearer and more professional
+    }
+
+    function getScript(biz) {
+      return [
+        { speaker: 'MAIA',   text: `Hello! Thank you for calling ${biz}. This is MAIA, your AI scheduling assistant. How can I help you today?` },
+        { speaker: 'Caller', text: `Hi, I'd like to book an appointment please.` },
+        { speaker: 'MAIA',   text: `Absolutely! I'd be happy to help you with that. Could I get your name first?` },
+        { speaker: 'Caller', text: `Sure, it's Alex.` },
+        { speaker: 'MAIA',   text: `Lovely to meet you, Alex! What service were you looking to book today?` },
+        { speaker: 'Caller', text: `I'm thinking a consultation — I'm not totally sure yet.` },
+        { speaker: 'MAIA',   text: `A consultation is a perfect first step — no pressure at all! I have Thursday at 2 PM or Friday at 10 AM available. Which works better for you?` },
+        { speaker: 'Caller', text: `Thursday at 2 sounds good.` },
+        { speaker: 'MAIA',   text: `You're all set, Alex! I've got you booked for Thursday at 2 PM with ${biz}. You'll get a confirmation shortly. Is there anything else I can help you with?` },
+        { speaker: 'Caller', text: `No, that's perfect. Thank you!` },
+        { speaker: 'MAIA',   text: `Wonderful! We look forward to seeing you Thursday. Have a great day!` },
+      ];
+    }
+
+    function addLine(speaker, text) {
+      const line = document.createElement('div');
+      line.className = 'transcript-line';
+      line.innerHTML = `<span class="transcript-speaker speaker-${speaker.toLowerCase()}">${speaker}</span><span class="transcript-text">${text}</span>`;
+      transcriptEl.appendChild(line);
+      requestAnimationFrame(() => line.classList.add('visible'));
+      line.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    let utteranceQueue = [];
+    let stopped = false;
+
+    function stopCall() {
+      stopped = true;
+      speechSynthesis.cancel();
+      utteranceQueue = [];
+      playBtn.style.display = '';
+      stopBtn.style.display = 'none';
+      statusEl.innerHTML = '<span class="call-dot" style="background:var(--muted);animation:none"></span> Call ended.';
+    }
+
+    function speakNext() {
+      if (stopped || utteranceQueue.length === 0) {
+        if (!stopped) stopCall();
+        return;
+      }
+      const { speaker, text } = utteranceQueue.shift();
+      const isMaia = speaker === 'MAIA';
+      addLine(speaker, text);
+      const utt = new SpeechSynthesisUtterance(text);
+      if (isMaia) {
+        applyMaiaVoice(utt);
+      } else {
+        // Caller voice — slightly lower pitch to contrast with MAIA
+        utt.pitch = 0.95;
+        utt.rate  = 1.0;
+      }
+      utt.onend = () => { if (!stopped) setTimeout(speakNext, 350); };
+      speechSynthesis.speak(utt);
+    }
+
+    playBtn.a
