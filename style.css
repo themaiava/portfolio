@@ -1649,3 +1649,7 @@ footer {
   background: #261816;
   border-color: #3d2820;
 }
+.about-text p strong {
+  color: var(--accent);
+  font-weight: 700;
+}
