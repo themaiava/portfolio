@@ -560,7 +560,7 @@
         utt.pitch = 0.95;
         utt.rate  = 1.0;
       }
-      utt.onend = () => { if (!stopped) setTimeout(speakNext, 350); };
+      utt.onend = () => { if (!stopped) setTimeout(speakNext, 50); };
       speechSynthesis.speak(utt);
     }
 
