@@ -1622,3 +1622,11 @@ footer {
   opacity: 0;
   animation: fadeUp 0.5s ease forwards;
 }
+
+.sample-wrap img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.speaker-maia { color: var(--accent); }
