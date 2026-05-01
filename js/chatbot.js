@@ -126,7 +126,7 @@ function buildChatbot() {
       width: 56px;
       height: 56px;
       border-radius: 50%;
-      background: #f4845f;
+      background: #c0614a;
       border: none;
       cursor: pointer;
       display: flex;
@@ -176,7 +176,7 @@ function buildChatbot() {
     #chat-window.open { display: flex; }
 
     #chat-header {
-      background: #f4845f;
+      background: #c0614a;
       color: #fff;
       padding: 14px 18px;
       display: flex;
@@ -232,7 +232,7 @@ function buildChatbot() {
       border-bottom-left-radius: 4px;
     }
     .chat-msg.user {
-      background: #f4845f;
+      background: #c0614a;
       color: #fff;
       align-self: flex-end;
       border-bottom-right-radius: 4px;
@@ -248,7 +248,7 @@ function buildChatbot() {
     .chat-suggestion {
       background: #fff0ea;
       border: 1.5px solid #fde0d0;
-      color: #f4845f;
+      color: #c0614a;
       font-size: 0.72rem;
       font-weight: 600;
       padding: 5px 11px;
@@ -280,7 +280,7 @@ function buildChatbot() {
       border: none;
       padding: 0 14px;
       cursor: pointer;
-      color: #f4845f;
+      color: #c0614a;
       font-size: 1.1rem;
       transition: transform 0.15s;
     }
