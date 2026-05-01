@@ -126,7 +126,7 @@ function buildChatbot() {
       width: 56px;
       height: 56px;
       border-radius: 50%;
-      background: #c0614a;
+      background: var(--accent);
       border: none;
       cursor: pointer;
       display: flex;
@@ -164,8 +164,8 @@ function buildChatbot() {
       bottom: 68px;
       right: 0;
       width: 320px;
-      background: #fff;
-      border: 1.5px solid #fde0d0;
+      background: var(--bg);
+      border: 1.5px solid var(--border);
       border-radius: 18px;
       box-shadow: 0 8px 40px rgba(244, 132, 95, 0.15);
       display: none;
@@ -176,7 +176,7 @@ function buildChatbot() {
     #chat-window.open { display: flex; }
 
     #chat-header {
-      background: #c0614a;
+      background: var(--accent);
       color: #fff;
       padding: 14px 18px;
       display: flex;
@@ -212,7 +212,7 @@ function buildChatbot() {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      background: #fffaf8;
+      background: var(--bg3);
     }
 
     .chat-msg {
@@ -225,14 +225,14 @@ function buildChatbot() {
       word-break: break-word;
     }
     .chat-msg.bot {
-      background: #fff;
-      border: 1.5px solid #fde0d0;
-      color: #2d1f1a;
+      background: var(--bg);
+      border: 1.5px solid var(--border);
+      color: var(--text);
       align-self: flex-start;
       border-bottom-left-radius: 4px;
     }
     .chat-msg.user {
-      background: #c0614a;
+      background: var(--accent);
       color: #fff;
       align-self: flex-end;
       border-bottom-right-radius: 4px;
@@ -243,12 +243,12 @@ function buildChatbot() {
       display: flex;
       flex-wrap: wrap;
       gap: 7px;
-      background: #fffaf8;
+      background: var(--bg3);
     }
     .chat-suggestion {
-      background: #fff0ea;
-      border: 1.5px solid #fde0d0;
-      color: #c0614a;
+      background: var(--accent-bg);
+      border: 1.5px solid var(--border);
+      color: var(--accent);
       font-size: 0.72rem;
       font-weight: 600;
       padding: 5px 11px;
@@ -257,12 +257,12 @@ function buildChatbot() {
       transition: background 0.15s;
       font-family: 'Inter', sans-serif;
     }
-    .chat-suggestion:hover { background: #fde0d0; }
+    .chat-suggestion:hover { background: var(--border); }
 
     #chat-input-row {
       display: flex;
-      border-top: 1.5px solid #fde0d0;
-      background: #fff;
+      border-top: 1.5px solid var(--border);
+      background: var(--bg);
     }
     #chat-input {
       flex: 1;
@@ -271,16 +271,16 @@ function buildChatbot() {
       padding: 12px 14px;
       font-size: 0.82rem;
       font-family: 'Inter', sans-serif;
-      color: #2d1f1a;
+      color: var(--text);
       background: transparent;
     }
-    #chat-input::placeholder { color: #c4a99e; }
+    #chat-input::placeholder { color: var(--muted); }
     #chat-send {
       background: none;
       border: none;
       padding: 0 14px;
       cursor: pointer;
-      color: #c0614a;
+      color: var(--accent);
       font-size: 1.1rem;
       transition: transform 0.15s;
     }
