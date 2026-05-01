@@ -1629,4 +1629,23 @@ footer {
   border-radius: 8px;
 }
 
-.speaker-maia { color: var(--accent); }
+.speaker-maia { color: var(--accent); 
+}
+[data-theme="dark"] .service-card {
+  background: #2d1f1c;
+  border-color: #4d2e28;
+}
+
+[data-theme="dark"] .service-deliverables {
+  background: #261816;
+}
+
+[data-theme="dark"] .training-card {
+  background: #2d1f1c;
+  border-color: #3d2820;
+}
+
+[data-theme="dark"] .training-section {
+  background: #261816;
+  border-color: #3d2820;
+}
