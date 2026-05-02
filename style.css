@@ -1951,4 +1951,86 @@ footer {
 [data-theme="dark"] .fit-card--accent {
   background: #3a1e18;
   border-color: var(--accent2);
+}}
+
+/* === PROCESS SECTION === */
+#process {
+  background: var(--bg2);
+}
+
+.process-sub {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 8px 0 48px;
+  max-width: 560px;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 28px 0;
+}
+
+.step-num {
+  font-family: 'Fira Code', monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0.25;
+  min-width: 56px;
+  line-height: 1;
+  padding-top: 4px;
+  flex-shrink: 0;
+}
+
+.process-step:hover .step-num {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+.step-body {
+  border-left: 2px solid var(--border);
+  padding-left: 28px;
+}
+
+.step-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.step-body p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+.process-connector {
+  width: 2px;
+  height: 24px;
+  background: var(--border);
+  margin-left: 27px;
+}
+
+.process-cta {
+  margin-top: 48px;
+}
+
+@media (max-width: 600px) {
+  .step-num {
+    font-size: 1.4rem;
+    min-width: 40px;
+  }
+  .step-body {
+    padding-left: 18px;
+  }
 }
