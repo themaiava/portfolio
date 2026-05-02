@@ -2048,3 +2048,24 @@ footer {
   color: var(--text);
   font-weight: 600;
 }
+
+/* === LOOM EMBED === */
+.loom-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg3);
+  margin-top: 8px;
+}
+
+.loom-wrap iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+  border: none;
+}
