@@ -1750,3 +1750,134 @@ footer {
 .cred-badge { font-size: 0.72rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; }
 .cred-desc { font-size: 0.83rem; color: var(--muted); line-height: 1.6; margin: 0; }
 [data-theme="dark"] .cred-card { background: var(--bg2); border-color: var(--border); }
+
+/* === WHY CLIENTS STAY (index.html) === */
+#proof { background: var(--bg3); }
+
+.proof-sub {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 540px;
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.proof-card {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: var(--shadow);
+}
+
+.proof-card:hover {
+  border-color: var(--accent2);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.proof-icon { font-size: 1.6rem; }
+
+.proof-card h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.proof-card p {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+[data-theme="dark"] .proof-card {
+  background: #2d1f1c;
+  border-color: #4d2e28;
+}
+
+/* === WHO I WORK BEST WITH (index.html) === */
+#fit { background: var(--bg2); }
+
+.fit-sub {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 540px;
+}
+
+.fit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.fit-card {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: var(--shadow);
+}
+
+.fit-card:hover {
+  border-color: var(--accent2);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.fit-card--accent {
+  border-color: var(--accent2);
+  background: var(--accent-bg);
+}
+
+.fit-icon { font-size: 1.6rem; }
+
+.fit-card h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.fit-card p {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.fit-cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 44px;
+  flex-wrap: wrap;
+}
+
+[data-theme="dark"] .fit-card {
+  background: #2d1f1c;
+  border-color: #4d2e28;
+}
+
+[data-theme="dark"] .fit-card--accent {
+  background: #3a1e18;
+  border-color: var(--accent2);
+}
