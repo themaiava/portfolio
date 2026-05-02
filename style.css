@@ -2034,3 +2034,17 @@ footer {
     padding-left: 18px;
   }
 }
+
+/* === RATES NOTE === */
+.rates-note {
+  margin-top: 14px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+.rates-note strong {
+  color: var(--text);
+  font-weight: 600;
+}
