@@ -81,7 +81,7 @@
             <span class="stat-label">Spreadsheets survived</span>
           </div>
           <div class="stat-card accent-card">
-            <span class="stat-num">Day 1</span>
+            <span class="stat-num" id="ai-day-count">Day 1</span>
             <span class="stat-label">AI Automation journey</span>
           </div>
         </div>
@@ -119,5 +119,15 @@
 
   <script src="js/theme.js"></script>
   <script src="js/chatbot.js"></script>
+  <script>
+    (function () {
+      var start = new Date('2026-04-29T00:00:00');
+      var today = new Date();
+      today.setHours(0, 0, 0, 0);
+      var day = Math.floor((today - start) / 86400000) + 1;
+      var el = document.getElementById('ai-day-count');
+      if (el && day > 0) el.textContent = 'Day ' + day;
+    })();
+  </script>
 </body>
 </html>
