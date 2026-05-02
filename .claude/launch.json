@@ -4,7 +4,7 @@
     {
       "name": "portfolio",
       "runtimeExecutable": "C:\\Users\\Michelle Pink Rejuso\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
-      "runtimeArgs": ["-m", "http.server", "3000"],
+      "runtimeArgs": [".claude\\serve.py"],
       "port": 3000
     }
   ]
