@@ -53,7 +53,7 @@ const responses = {
 const answers = {
   greet: "Hi there! 👋 I'm MAIA, Michelle's assistant. I can tell you about her services, rates, experience, or availability. What would you like to know?",
 
-  services: `Michelle offers the following services:\n\n✅ Available Now:\n📋 Data Entry\n🔍 Lead Research\n📄 PDF Data Migration\n💬 Customer Service Support\n🗃️ File & Document Management\n\n🔄 Coming Soon:\n🤖 Custom AI Automation Workflows\n🧠 Executive Assistance + AI\n📞 AI Appointment Setting\n\n🎓 Open to Training:\nAdmin Support, Social Media, CRM Management, AI Automation Support\n\nWant to know more about any of these?`,
+  services: `Michelle offers the following services:\n\n✅ Available Now:\n📋 Data Entry\n🔍 Lead Research\n📄 PDF Data Migration\n💬 Customer Service Support\n🗃️ File & Document Management\n\n🔧 Building & Open to Work:\n📱 Social Media Support\n🗓️ Admin & Executive Support\n🤖 Custom AI Automation Workflows\n📊 CRM Management\n📞 AI Appointment Setting\n✉️ Automated Cold Email\n\nFor the Building & Open to Work services, Michelle is actively learning and is open to being trained on your specific tools and workflow.\n\nWant to know more about any of these?`,
 
   rates: "Rates start at $10/hr and go up depending on the scope of work:\n\n📋 Data entry — starting rate\n🔍 Lead research & PDF migration — mid range\n🤖 AI automation & complex workflows — higher end\n\nNote: any tool subscriptions or software needed for the role are not included in the rate — those are shouldered by the client, or can be factored in if needed.\n\nBook a free 20-minute discovery call and Michelle will give you a clear number based on exactly what you need.\n\n📅 Book via the Contact page or email themaiava@gmail.com",
 
