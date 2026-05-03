@@ -55,9 +55,9 @@ const answers = {
 
   services: `Michelle offers the following services:\n\n✅ Available Now:\n📋 Data Entry\n🔍 Lead Research\n📄 PDF Data Migration\n💬 Customer Service Support\n🗃️ File & Document Management\n\n🔄 Coming Soon:\n🤖 Custom AI Automation Workflows\n🧠 Executive Assistance + AI\n📞 AI Appointment Setting\n\n🎓 Open to Training:\nAdmin Support, Social Media, CRM Management, AI Automation Support\n\nWant to know more about any of these?`,
 
-  rates: "Rates depend on the scope of work:\n\n📋 Data entry — starts on the lower end\n🔍 Lead research & PDF migration — mid range\n🤖 AI automation & complex workflows — higher end\n\nMichelle doesn't do flat rates because cookie-cutter pricing usually means cookie-cutter work. Book a free 20-minute discovery call and she'll give you a clear number based on exactly what you need.\n\n📅 Book via the Contact page or email themaiava@gmail.com",
+  rates: "Rates start at $10/hr and go up depending on the scope of work:\n\n📋 Data entry — starting rate\n🔍 Lead research & PDF migration — mid range\n🤖 AI automation & complex workflows — higher end\n\nNote: any tool subscriptions or software needed for the role are not included in the rate — those are shouldered by the client, or can be factored in if needed.\n\nBook a free 20-minute discovery call and Michelle will give you a clear number based on exactly what you need.\n\n📅 Book via the Contact page or email themaiava@gmail.com",
 
-  availability: "Michelle is currently open to new clients! 🟢\n\nShe's available part-time or full-time with flexible hours — she works around your timezone so you're never out of sync. She covers US, UK, AU, and more.\n\nResponse time: within 24 hours, Mon–Fri. Book a call or send a message via the Contact page!",
+  availability: "Michelle is currently open to new clients! 🟢\n\nShe's available part-time or full-time with flexible hours — she works around your timezone so you're never out of sync.\n\nResponse time: within 24 hours, Mon–Fri. Book a call or send a message via the Contact page!",
 
   experience: "Michelle has 6+ years of hands-on VA experience:\n\n📋 6 years of data entry and lead research — thousands of verified US business leads across multiple industries\n📄 1 year of PDF data migration for dental screening records — zero-error, fully confidential\n💬 Outbound calls, patient follow-ups, insurance compliance reminders\n🗃️ Built a team tracker from scratch that was adopted as the official system\n\nNo fluff — just consistent, reliable work across long-term client relationships.",
 
@@ -65,9 +65,9 @@ const answers = {
 
   turnaround: "Turnaround depends on the task volume and complexity — Michelle will always give you a clear timeline upfront before starting.\n\nFor standard data entry and lead research: she delivers in batches with regular progress updates so you're never left wondering. No surprises.",
 
-  timezone: "Michelle is based in the Philippines (PHT, UTC+8) and works flexible hours with timezone overlap.\n\nShe regularly works with US (EST, CST, PST), UK, and Australian clients. She'll adjust her schedule to make sure there's overlap with your team — just mention your timezone on the Contact page.",
+  timezone: "Michelle is based in the Philippines (PHT, UTC+8) and works flexible hours with timezone overlap.\n\nShe'll adjust her schedule to make sure there's overlap with your team — just mention your timezone on the Contact page.",
 
-  tools: "Michelle works with:\n\n📊 Google Sheets & Excel — experienced\n☁️ Dropbox — used daily for PDF migration work\n💬 Standard CRM platforms — trainable on your specific tool\n🤖 n8n, Make, Zapier, Go High Level — currently learning\n\nIf you use a specific platform, she's open to being trained on it.",
+  tools: "Michelle works with:\n\n📊 Google Sheets & Excel — experienced\n☁️ Dropbox — used daily for PDF migration work\n💬 Standard CRM platforms — trainable on your specific tool\n🤖 n8n — learning, actively building workflows (currently using free plan)\n🔧 Go High Level — just getting started\n\nIf you use a specific platform, she's open to being trained on it.",
 
   trial: "Yes — Michelle is open to paid trial tasks. It's the best way to see her work quality firsthand before committing to a longer engagement.\n\nReach out via the Contact page or email themaiava@gmail.com to discuss a trial scope.",
 
@@ -77,7 +77,7 @@ const answers = {
 
   confidential: "Confidentiality is non-negotiable for Michelle. She's spent the past year handling sensitive dental patient records — scanned forms with personal health information — with zero tolerance for errors or data leaks.\n\nIf your work involves sensitive data, she understands the standard and takes it seriously.",
 
-  ai: "AI automation is Michelle's current learning focus! 🤖\n\nShe's studying n8n, Make, and Go High Level to build automated workflows — starting with lead research automation. Her services are currently delivered manually with 6+ years of experience, and will be upgraded with automation as it ships.\n\nShe's also open to working under clients who want to train her on their own automation stack.",
+  ai: "AI automation is Michelle's current learning focus! 🤖\n\nShe's actively learning n8n and has already built two workflows — a lead research automation and a lead follow-up automation. Both are built on free tools and are still being improved, but they're live and working.\n\nHer VA services are currently delivered manually with 6+ years of experience, and will be upgraded with automation as it develops.\n\nShe's also open to working under clients who want to train her on their own automation stack.",
 
   contact: "You can reach Michelle at:\n\n✉️ themaiava@gmail.com\n📅 Book a free 20-min discovery call via the Contact page\n\nShe responds within 24 hours, Mon–Fri.",
 
