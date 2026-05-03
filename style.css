@@ -2069,3 +2069,24 @@ footer {
   border-radius: var(--radius);
   border: none;
 }
+
+/* === BUILDING SECTION NOTES === */
+.service-training-note {
+  font-size: 0.78rem;
+  color: var(--accent);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  line-height: 1.5;
+}
+
+.building-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 32px;
+  padding: 16px 20px;
+  border-left: 3px solid var(--coming-dot, var(--accent2));
+  background: var(--accent-bg);
+  border-radius: 8px;
+  line-height: 1.6;
+}
