@@ -2090,3 +2090,51 @@ footer {
   border-radius: 8px;
   line-height: 1.6;
 }
+
+/* === JOURNAL SECTION === */
+.journal-section {
+  margin-top: 64px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border);
+}
+
+.journal-intro {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 8px 0 40px;
+  max-width: 560px;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.journal-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.journal-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 640px;
+}
+
+.journal-date {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.journal-body p {
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.85;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.journal-body p:last-child {
+  margin-bottom: 0;
+}
