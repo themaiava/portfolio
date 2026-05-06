@@ -2128,8 +2128,8 @@ footer {
 }
 
 .journal-body p {
-  font-size: 0.92rem;
-  color: var(--text);
+  font-size: 0.8rem;
+  color: var(--muted);
   line-height: 1.85;
   margin-bottom: 12px;
   font-style: italic;
