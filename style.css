@@ -2141,12 +2141,12 @@ footer {
 
 /* === SERVICES CAPACITY NOTE === */
 .services-capacity-note {
-  font-size: 0.95rem;
-  color: var(--text);
-  line-height: 1.7;
-  padding: 16px 20px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.6;
+  padding: 10px 16px;
   background: var(--accent-bg);
-  border-left: 4px solid var(--accent);
+  border-left: 3px solid var(--accent);
   border-radius: 8px;
   margin-bottom: 20px;
   max-width: 640px;
