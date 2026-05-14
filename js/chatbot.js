@@ -55,11 +55,11 @@ const answers = {
 
   services: `Michelle's core expertise:\n\n📋 Data Entry — accurate, high-volume, consistently delivered\n🔍 Lead Research — verified US business contacts, 100+ per shift\n📄 PDF Data Migration — dental records, scanned forms into software\n💬 Customer Service Support — outbound calls, follow-ups, documentation\n🗃️ File & Document Management — organized folders, clean file systems, cloud platforms\n\nShe's also building AI automation skills on the side — check the AI Journey page for live progress.\n\nWant to know more about any of these?`,
 
-  rates: "Rates start at $10/hr and go up depending on the scope of work:\n\n📋 Data entry — starting rate\n🔍 Lead research & PDF migration — mid range\n🤖 AI automation & complex workflows — higher end\n\nNote: any tool subscriptions or software needed for the role are not included in the rate — those are shouldered by the client, or can be factored in if needed.\n\nBook a free 20-minute discovery call and Michelle will give you a clear number based on exactly what you need.\n\n📅 Book via the Contact page or email themaiava@gmail.com",
+  rates: "Rates start at $10/hr and go up depending on the scope of work:\n\n📋 Data entry — starting rate\n🔍 Lead research & PDF migration — mid range\n💬 Customer service & file management — depends on volume and complexity\n\nNote: any tool subscriptions or software needed for the role are not included in the rate — those are shouldered by the client, or can be factored in if needed.\n\nBook a free 20-minute discovery call and Michelle will give you a clear number based on exactly what you need.\n\n📅 Book via the Contact page or email themaiava@gmail.com",
 
   availability: "Michelle is currently open to new clients! 🟢\n\nShe's available part-time or full-time with flexible hours — she works around your timezone so you're never out of sync.\n\nResponse time: within 24 hours, Mon–Fri. Book a call or send a message via the Contact page!",
 
-  experience: "Michelle has 6+ years of hands-on VA experience:\n\n📋 6 years of data entry and lead research — thousands of verified US business leads across multiple industries\n📄 1 year of PDF data migration for dental screening records — zero-error, fully confidential\n💬 Outbound calls, patient follow-ups, insurance compliance reminders\n🗃️ Built a team tracker from scratch that was adopted as the official system\n\nNo fluff — just consistent, reliable work across long-term client relationships.",
+  experience: "Michelle has 6+ years of hands-on VA experience:\n\n📋 6+ years of data entry and lead research — thousands of verified US business leads across multiple industries\n📄 1 year of PDF data migration for dental screening records — zero-error, fully confidential\n💬 Outbound calls, patient follow-ups, insurance compliance reminders\n🗃️ Built a team tracker from scratch that was adopted as the official system\n\nNo fluff — just consistent, reliable work across long-term client relationships.",
 
   why: "Here's the case for Michelle:\n\n✅ 6+ years of real VA experience — not just a course certificate\n✅ Long-term client relationships — she doesn't job-hop\n✅ Built systems on her own initiative that her team adopted\n✅ Careful with sensitive records — dental patient data handled with full confidentiality\n✅ Flexible timezone overlap — works around your schedule\n✅ Clear about what she can and can't do — no overpromising\n\nIf you want someone dependable who gets things done without being chased, she's worth a conversation.",
 
@@ -348,7 +348,7 @@ function buildChatbot() {
     if (isOpen) {
       badge.style.display = 'none';
       if (msgs.children.length === 0) {
-        setTimeout(() => addMsg("Hi! 👋 I'm Michelle's assistant. Ask me about her services, rates, or availability!", 'bot'), 300);
+        setTimeout(() => addMsg("Hi! 👋 I'm MAIA, Michelle's assistant. Ask me about her services, rates, or availability!", 'bot'), 300);
       }
     } else {
       toggle.innerHTML = '💬<span id="chat-badge" style="display:none">1</span>';
