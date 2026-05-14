@@ -49,6 +49,11 @@
         what I've shipped, and what's next.
       </p>
 
+      <div class="journey-day-badge">
+        <span class="journey-day-num" id="ai-day-count">Day 1</span>
+        <span class="journey-day-label">on this journey</span>
+      </div>
+
       <div class="journey-layout">
 
         <div class="progress-board">
@@ -290,5 +295,15 @@
   <script src="js/nav.js"></script>
   <script src="js/script.js"></script>
   <script src="js/chatbot.js"></script>
+  <script>
+    (function () {
+      var start = new Date('2026-04-29T00:00:00');
+      var today = new Date();
+      today.setHours(0, 0, 0, 0);
+      var day = Math.floor((today - start) / 86400000) + 1;
+      var el = document.getElementById('ai-day-count');
+      if (el && day > 0) el.textContent = 'Day ' + day;
+    })();
+  </script>
 </body>
 </html>
