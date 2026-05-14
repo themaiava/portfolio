@@ -53,7 +53,7 @@ const responses = {
 const answers = {
   greet: "Hi there! 👋 I'm MAIA, Michelle's assistant. I can tell you about her services, rates, experience, or availability. What would you like to know?",
 
-  services: `Michelle's core expertise:\n\n📋 Data Entry — accurate, high-volume, consistently delivered\n🔍 Lead Research — verified US business contacts, 100+ per shift\n📄 PDF Data Migration — dental records, scanned forms into software\n💬 Customer Service Support — outbound calls, follow-ups, documentation\n\nShe's also building AI automation skills on the side — check the AI Journey page for live progress.\n\nWant to know more about any of these?`,
+  services: `Michelle's core expertise:\n\n📋 Data Entry — accurate, high-volume, consistently delivered\n🔍 Lead Research — verified US business contacts, 100+ per shift\n📄 PDF Data Migration — dental records, scanned forms into software\n💬 Customer Service Support — outbound calls, follow-ups, documentation\n🗃️ File & Document Management — organized folders, clean file systems, cloud platforms\n\nShe's also building AI automation skills on the side — check the AI Journey page for live progress.\n\nWant to know more about any of these?`,
 
   rates: "Rates start at $10/hr and go up depending on the scope of work:\n\n📋 Data entry — starting rate\n🔍 Lead research & PDF migration — mid range\n🤖 AI automation & complex workflows — higher end\n\nNote: any tool subscriptions or software needed for the role are not included in the rate — those are shouldered by the client, or can be factored in if needed.\n\nBook a free 20-minute discovery call and Michelle will give you a clear number based on exactly what you need.\n\n📅 Book via the Contact page or email themaiava@gmail.com",
 
