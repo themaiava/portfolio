@@ -630,6 +630,42 @@ h2 {
   white-space: nowrap;
   align-self: center;
 }
+.tool-status-strong {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 10px;
+  white-space: nowrap;
+  align-self: center;
+  margin-left: auto;
+}
+.tool-status-active {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #16a34a;
+  background: var(--green-bg);
+  border: 1.5px solid var(--green);
+  border-radius: 20px;
+  padding: 3px 10px;
+  white-space: nowrap;
+  align-self: center;
+  margin-left: auto;
+}
+.tool-status-learning {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--bg3);
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 10px;
+  white-space: nowrap;
+  align-self: center;
+  margin-left: auto;
+}
 
 .milestone-box {
   border: 1.5px dashed var(--accent2);
