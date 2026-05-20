@@ -837,6 +837,8 @@ footer {
 }
 .footer-link:hover { color: var(--accent, #f4845f); }
 .footer-sep { color: var(--border); }
+.footer-sprout { margin-left: 10px; opacity: 0.5; text-decoration: none; transition: opacity 0.2s; }
+.footer-sprout:hover { opacity: 1; }
 
 /* === CONTACT PAGE === */
 .contact-page-grid {
