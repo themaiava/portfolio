@@ -303,6 +303,7 @@ function buildChatbot() {
       <div id="chat-messages"></div>
       <div id="chat-suggestions">
         <button class="chat-suggestion" data-msg="What services do you offer?">Services</button>
+        <button class="chat-suggestion" data-msg="What tools do you use?">Tools</button>
         <button class="chat-suggestion" data-msg="What are your rates?">Rates</button>
         <button class="chat-suggestion" data-msg="Are you available?">Availability</button>
         <button class="chat-suggestion" data-msg="How do I contact you?">Contact</button>
