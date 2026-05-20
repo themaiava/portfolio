@@ -230,12 +230,12 @@ h2 {
 
 .journey-secret-link {
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: var(--accent);
-  opacity: 0.25;
-  margin-top: 28px;
+  opacity: 0.2;
+  flex-shrink: 0;
   transition: opacity 0.2s;
 }
 .journey-secret-link:hover { opacity: 0.6; }
