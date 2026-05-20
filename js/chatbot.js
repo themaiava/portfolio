@@ -53,7 +53,7 @@ const responses = {
 const answers = {
   greet: "Hi there! 👋 I'm MAIA, Michelle's assistant. I can tell you about her services, rates, experience, or availability. What would you like to know?",
 
-  services: `Michelle's core expertise:\n\n📋 Data Entry — accurate, consistently delivered\n🔍 Lead Research — verified US business contacts across multiple industries\n📄 PDF Data Migration — scanned forms and paper records into digital systems\n💬 Customer Service Support — outbound/inbound calls, follow-ups, documentation\n🗃️ File & Document Management — organized folders, clean file systems, cloud platforms\n\nShe's also building AI automation skills on the side — check the AI Journey page for live progress.\n\nWant to know more about any of these?`,
+  services: `Michelle's core expertise:\n\n📋 Data Entry — accurate, consistently delivered\n🔍 Lead Research — verified US business contacts across multiple industries\n📄 PDF Data Migration — scanned forms and paper records into digital systems\n💬 Customer Service Support — outbound/inbound calls, follow-ups, documentation\n🗃️ File & Document Management — organized folders, clean file systems, cloud platforms\n\nWant to know more about any of these?`,
 
   rates: "Pricing depends on the scope, hours, and responsibilities — whether that's a part-time role, full-time arrangement, or a defined ongoing scope.\n\nNote: any tool subscriptions or software needed for the role are covered by the client.\n\nBook a free 20-minute discovery call and Michelle will give you a clear number based on exactly what you need.\n\n📅 Book via the Contact page or email themaiava@gmail.com",
 
@@ -67,7 +67,7 @@ const answers = {
 
   timezone: "Michelle is based in the Philippines (PHT, UTC+8) and works flexible hours with timezone overlap.\n\nShe'll adjust her schedule to make sure there's overlap with your team — just mention your timezone on the Contact page.",
 
-  tools: "Michelle works with:\n\n📊 Google Sheets & Excel — experienced\n☁️ Dropbox — used daily for PDF migration work\n💬 Standard CRM platforms — trainable on your specific tool\n🤖 n8n — learning, actively building workflows (currently using free plan)\n🔧 Go High Level — just getting started\n\nIf you use a specific platform, she's open to being trained on it.",
+  tools: "Michelle's tools and platforms:\n\n📊 Productivity & Comms — Google Sheets, Excel, Gmail, Slack, Dropbox\n🔍 Lead Research & Sourcing — Hunter.io, LinkedIn, Facebook, Instagram, Google Search\n🗺️ Business Directories — Google Maps, Yelp, Yellow Pages, BBB, Manta, Angi, Houzz\n\nShe's also currently practising AI automation with n8n — not an offered service yet, but actively being built.\n\nIf you use a specific platform, she's open to being trained on it.",
 
   trial: "Yes — Michelle is open to paid trial tasks. It's the best way to see her work quality firsthand before committing to a longer engagement.\n\nReach out via the Contact page or email themaiava@gmail.com to discuss a trial scope.",
 
