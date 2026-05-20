@@ -228,6 +228,18 @@ h2 {
 
 .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
 
+.journey-secret-link {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border);
+  opacity: 0.35;
+  margin-top: 32px;
+  transition: opacity 0.2s;
+}
+.journey-secret-link:hover { opacity: 0.7; }
+
 .btn-primary {
   background: var(--accent);
   color: #fff;
