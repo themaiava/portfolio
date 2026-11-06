@@ -67,7 +67,7 @@ const answers = {
 
   timezone: "Michelle is based in the Philippines (PHT, UTC+8) and can discuss timezone overlap for your team.\n\nMention your timezone when you email themaiava@gmail.com or book a call through the Contact page.",
 
-  tools: "Michelle's tools and platforms:\n\n📊 Productivity & Comms — Google Sheets, Excel, Gmail, Slack, Dropbox\n🤖 AI Tools — ChatGPT, Claude\n🔍 Lead Research & Sourcing — Hunter.io, LinkedIn, Facebook, Instagram, Google Search\n🗺️ Business Directories — Google Maps, Yelp, Yellow Pages, BBB, Manta, Angi, Houzz\n\nShe uses AI tools in her day-to-day workflow. AI automation is a learning focus, not a service she currently offers.\n\nIf you use a specific platform, she's open to being trained on it.",
+  tools: "Michelle's tools and platforms:\n\n📊 Productivity & Comms — Google Sheets, Excel, Gmail, Slack, Dropbox\n🤖 AI Tools — ChatGPT, Claude\n🔍 Lead Research & Sourcing — Hunter.io, LinkedIn, Facebook, Instagram, Google Search\n🗺️ Business Directories — Google Maps, Yelp, Yellow Pages, BBB, Manta, Angi, Houzz\n\nShe uses AI tools in her day-to-day work and is just starting to learn AI automation, so it isn't part of her services yet.\n\nIf you use a specific platform, she's open to being trained on it.",
 
   trial: "Yes — Michelle is open to paid trial tasks. It's the best way to see her work quality firsthand before committing to a longer engagement.\n\nReach out via the Contact page or email themaiava@gmail.com to discuss a trial scope.",
 
@@ -77,7 +77,7 @@ const answers = {
 
   confidential: "Confidentiality is non-negotiable for Michelle. She's spent the past year handling sensitive dental patient records — scanned forms with personal health information — with zero tolerance for errors or data leaks.\n\nIf your work involves sensitive data, she understands the standard and takes it seriously.",
 
-  ai: "Michelle uses ChatGPT and Claude as tools in her day-to-day VA workflow. AI automation is a separate learning focus, not a service she currently offers. 🤖\n\nShe's actively learning n8n and has already built two practice workflows — one for lead research and one for lead follow-up. Both are still being improved.\n\nHer VA services draw on 7+ years of experience, and she's open to learning a client's preferred tools.",
+  ai: "Michelle uses ChatGPT and Claude as tools in her day-to-day VA work. 🤖\n\nAI automation is something she's just starting to learn, so it isn't part of her services yet.\n\nHer VA services draw on 7+ years of experience, and she's open to learning a client's preferred tools.",
 
   contact: "You can reach Michelle directly at:\n\n✉️ themaiava@gmail.com\n💼 LinkedIn through the Contact page\n📅 Book a discovery call through the Contact page.",
 

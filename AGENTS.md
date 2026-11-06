@@ -52,7 +52,7 @@ Keyword-matching only — no API calls. Two objects: `responses` (keyword arrays
 ## Key content rules
 
 - **Rates**: Never mention a dollar amount anywhere — always direct to discovery call
-- **AI automation**: Michelle is practising it, not offering it as a service yet. Mention as learning/building only.
+- **AI automation**: Michelle is just starting to learn it — not building or practising yet, and not a service. Never claim she has built automation workflows.
 - **Services (5 only)**: Data Entry, Lead Research, PDF Data Migration, Customer Service Support, File & Document Management
 - **Tools section on services.html**: Uses `https://cdn.simpleicons.org/{slug}/{hex}` for logos. Hunter.io has no Simple Icons entry — use text badge instead. All `<img>` tags have `onerror` fallbacks.
 
