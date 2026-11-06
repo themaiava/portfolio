@@ -23,7 +23,7 @@ Use PowerShell (not Bash) — this is a Windows machine.
 - `index.html` — Homepage (hero with headshot, At a Glance numbers, Featured Work: The Hub, Why Clients Stay, How We Work Together)
 - `about.html` — Bio, stats, TestDome MS Excel certificate
 - `services.html` — 5 service cards + Tools & Platforms Used section
-- `works.html` — 4 case study cards with filter tabs (Systems & Trackers, Data & Research); The Hub (`#the-hub`) is first. Never show "CSDP" on the site; the demo/app name is "Workers Tracker" and the site calls it "The Hub"
+- `works.html` — 4 case study cards with filter tabs (Systems & Trackers, Data & Research); The Hub (`#the-hub`) is first. Never write the client program's acronym (the app's original name) anywhere in this repo, including commit messages; the app is "Workers Tracker" in the demo screenshot and "The Hub" in site copy. Don't link to the live demo app — its name and web address still show that acronym
 - `contact.html` — Calendly discovery call as the primary action, with email and LinkedIn as secondary options
 - `journey.html` — AI automation learning tracker (hidden from nav — accessible via secret dot only)
 - `style.css` — Single stylesheet for all pages, uses CSS custom properties for light/dark theming
