@@ -20,11 +20,11 @@ Use PowerShell (not Bash) — this is a Windows machine.
 
 ## File structure
 
-- `index.html` — Homepage (hero, By the Numbers, Why Clients Stay, Who I Work Best With, How We Work Together)
+- `index.html` — Homepage (hero with headshot, At a Glance numbers, Featured Work: The Hub, Why Clients Stay, How We Work Together)
 - `about.html` — Bio, stats, TestDome MS Excel certificate
 - `services.html` — 5 service cards + Tools & Platforms Used section
-- `works.html` — 3 case study cards with filter tabs (Systems & Trackers, Data & Research)
-- `contact.html` — Formspree contact form + Calendly + availability sidebar
+- `works.html` — 4 case study cards with filter tabs (Systems & Trackers, Data & Research); The Hub (`#the-hub`) is first
+- `contact.html` — Calendly discovery call as the primary action, with email and LinkedIn as secondary options
 - `journey.html` — AI automation learning tracker (hidden from nav — accessible via secret dot only)
 - `style.css` — Single stylesheet for all pages, uses CSS custom properties for light/dark theming
 - `js/theme.js` — Dark/light toggle, persists to localStorage, loaded on every page
@@ -33,7 +33,7 @@ Use PowerShell (not Bash) — this is a Windows machine.
 - `js/works.js` — Filter tab logic + scroll fade-in for work cards
 - `js/chatbot.js` — Entire MAIA chatbot: keyword matching, answers, and injected HTML/CSS
 - `js/cursor.js` — Canvas particle trail on mouse move (respects prefers-reduced-motion)
-- `assets/images/` — michelle.png (headshot), lead-research-sample.png, lead-research-workflow.png
+- `assets/images/` — michelle.jpg (800px headshot used on the site; michelle.png is the 1.7 MB original), the-hub-demo.png, lead-research-sample.png, lead-research-workflow.png
 
 ## Theming
 
@@ -63,7 +63,7 @@ When the same change needs to go on all pages (e.g. nav, footer), use PowerShell
 ```powershell
 $files = @("index.html","about.html","services.html","works.html","contact.html","journey.html")
 foreach ($f in $files) {
-  $path = "C:\Users\Michelle Pink Rejuso\OneDrive\Desktop\PortfolioNew\$f"
+  $path = "D:\Project 2.0\$f"
   $content = Get-Content $path -Raw -Encoding UTF8
   $content = $content.Replace($old, $new)
   Set-Content $path $content -Encoding UTF8
@@ -73,7 +73,7 @@ foreach ($f in $files) {
 ## Memory
 
 Project memory lives at:
-`C:\Users\Michelle Pink Rejuso\.claude\projects\C--Users-Michelle-Pink-Rejuso-OneDrive-Desktop-PortfolioNew\memory\`
+`C:\Users\Michelle Pink Rejuso\.claude\projects\D--Project-2-0\memory\`
 
 - `MEMORY.md` — index
 - `project_career_plan.md` — full portfolio status, positioning rules, to-do list
