@@ -59,7 +59,7 @@ const answers = {
 
   availability: "Michelle welcomes inquiries about part-time or full-time support. Her schedule and timezone overlap depend on the scope of work.\n\nEmail themaiava@gmail.com or book a call through the Contact page to discuss availability.",
 
-  experience: "Michelle has 7+ years of hands-on VA experience, since August 2019:\n\n📋 Data entry and lead research — thousands of verified US business leads across multiple industries\n📄 1 year of PDF data migration for dental screening records — zero-error, fully confidential\n💬 Prior BPO call center background — outbound/inbound calls, follow-ups, compliance check-ins\n🗃️ Built a team tracker from scratch that was adopted as the official system\n\nNo fluff — just consistent, reliable work across long-term client relationships.",
+  experience: "Michelle has 7+ years of hands-on VA experience, since August 2019:\n\n📋 Data entry and lead research — thousands of verified US business leads across multiple industries\n📄 1 year of PDF data migration for dental screening records — zero-error, fully confidential\n💬 Prior BPO call center background — outbound/inbound calls, follow-ups, compliance check-ins\n🗃️ Built a Google Sheets team tracker that became the official system, then used AI tools to merge the team's growing pile of spreadsheets into The Hub, a web app they run on daily\n\nNo fluff — just consistent, reliable work across long-term client relationships.",
 
   why: "Here's the case for Michelle:\n\n✅ 7+ years of real VA experience — not just a course certificate\n✅ Long-term client relationships — she doesn't job-hop\n✅ Built systems on her own initiative that her team adopted\n✅ Careful with sensitive records — dental patient data handled with full confidentiality\n✅ Flexible timezone overlap — works around your schedule\n✅ Clear about what she can and can't do — no overpromising\n\nIf you want someone dependable who gets things done without being chased, she's worth a conversation.",
 
@@ -77,7 +77,7 @@ const answers = {
 
   confidential: "Confidentiality is non-negotiable for Michelle. She's spent the past year handling sensitive dental patient records — scanned forms with personal health information — with zero tolerance for errors or data leaks.\n\nIf your work involves sensitive data, she understands the standard and takes it seriously.",
 
-  ai: "Michelle uses ChatGPT and Claude as tools in her day-to-day VA work. 🤖\n\nAI automation is something she's just starting to learn, so it isn't part of her services yet.\n\nHer VA services draw on 7+ years of experience, and she's open to learning a client's preferred tools.",
+  ai: "Michelle uses ChatGPT and Claude as tools in her day-to-day VA work. 🤖\n\nShe also used AI tools to build The Hub, a web app that merged her client's spreadsheets into one system the team runs on daily.\n\nAI automation is something she's just starting to learn, so it isn't part of her services yet.\n\nHer VA services draw on 7+ years of experience, and she's open to learning a client's preferred tools.",
 
   contact: "You can reach Michelle directly at:\n\n✉️ themaiava@gmail.com\n💼 LinkedIn through the Contact page\n📅 Book a discovery call through the Contact page.",
 
